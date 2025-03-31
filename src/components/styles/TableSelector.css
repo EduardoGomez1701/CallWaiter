@@ -1,25 +1,62 @@
 .table-selector {
-    text-align: center;
-    margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 0 1rem; /* Añadido para evitar que el contenido toque los bordes en pantallas pequeñas */
+}
+
+.table-selector label {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #2d3748;
+  display: block; /* Cambiado a bloque para mejor alineación en pantallas pequeñas */
+  margin-bottom: 0.5rem; /* Espaciado adicional para separación con el selector */
+}
+
+.table-selector select {
+  width: 100%;
+  max-width: 400px; /* Limitar el ancho máximo para pantallas grandes */
+  padding: 0.5rem 1rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.375rem;
+  font-size: 1rem;
+  color: #2d3748;
+  background-color: #f0f0f0; /* Asegurar un fondo blanco para mejor contraste */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+.table-selector select:focus {
+  outline: none;
+  border-color: #4299e1;
+  box-shadow: 0 0 6px rgba(66, 153, 225, 0.5);
+}
+
+@media (max-width: 768px) {
+  .table-selector {
+      margin-bottom: 1.5rem;
   }
-  
+
   .table-selector label {
-    font-size: 1.1rem;
-    font-weight: bold;
-    margin-right: 0.5rem;
-    color: #2d3748;
+      font-size: 1rem;
   }
-  
+
   .table-selector select {
-    padding: 0.5rem 1rem;
-    border: 1px solid #ccc;
-    border-radius: 0.375rem;
-    font-size: 1rem;
-    color: #2d3748;
+      font-size: 0.9rem;
+      padding: 0.4rem 0.8rem;
   }
-  
-  .table-selector select:focus {
-    outline: none;
-    border-color: #4299e1;
-    box-shadow: 0 0 6px rgba(66, 153, 225, 0.5);
+}
+
+@media (max-width: 480px) {
+  .table-selector {
+      margin-bottom: 1rem;
   }
+
+  .table-selector label {
+      font-size: 0.9rem;
+  }
+
+  .table-selector select {
+      font-size: 0.85rem;
+      padding: 0.3rem 0.6rem;
+  }
+}

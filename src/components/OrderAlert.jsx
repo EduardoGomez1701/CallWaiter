@@ -12,7 +12,7 @@ const OrderAlert = ({ selectedTable }) => {
   };
 
   return (
-    <button onClick={handleSendAlert} className='call-waiter' disabled={!selectedTable || alertSent}>
+    <button onClick={handleSendAlert} className='call-waiter'>
       {alertSent ? 'Aviso Enviado' : 'Llamar al Mesero'}
     </button>
   );

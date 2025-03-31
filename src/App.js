@@ -6,10 +6,12 @@ const App = () => {
   const [selectedTable, setSelectedTable] = useState('');
 
   return (
-    <div>
-      <h1>Bienvenido al Restaurante</h1>
-      <TableSelector totalTables={10} onSelectTable={setSelectedTable} />
-      {selectedTable && <OrderAlert selectedTable={selectedTable} />}
+    <div className='container'>
+      <div className='card'>
+        <h1>Bienvenido al Restaurante</h1>
+        <TableSelector totalTables={10} onSelectTable={setSelectedTable} />
+        {selectedTable && <OrderAlert selectedTable={selectedTable} />}
+      </div>
     </div>
   );
 };

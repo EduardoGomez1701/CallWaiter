@@ -1,0 +1,82 @@
+/* App.css */
+body{
+    background-image: url(/public/cafeart.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.card {
+    min-height: 230px;
+    height: auto;
+    border-radius: 20px; /* Reducido para un diseño más moderno */
+    background: linear-gradient(145deg, #eab260, #dd7116); /* Gradiente para un efecto más atractivo */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), 
+                -10px -10px 20px rgba(255, 255, 255, 0.7); /* Sombras más suaves */
+    padding: 1.5rem; /* Añadido padding interno para espaciado */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para interactividad */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efecto de agrandamiento al pasar el cursor */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2), 
+                -15px -15px 30px rgba(255, 255, 255, 0.8); /* Sombras más pronunciadas al pasar el cursor */
+}
+
+h1{
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+
+    padding: 1em;
+    margin-top: auto;
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding: 0.3em;
+    }
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 1.2rem;
+        padding: 0.3em;
+    }
+}
