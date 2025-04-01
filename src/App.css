@@ -5,9 +5,12 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     font-family: 'Arial', sans-serif;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-attachment: scroll;
+    background-position: top center;
     height: 100vh;
 }
 .container {
