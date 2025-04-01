@@ -12,9 +12,9 @@ const TableSelector = ({ totalTables, onSelectTable }) => {
 
   return (
     <div className='table-selector'>
-      <label htmlFor="table">Selecciona tu mesa:</label>
+      <label htmlFor="table">Selecciona la mesa en la que estas:</label>
       <select id="table" value={selectedTable} onChange={handleChange}>
-        <option value="" disabled>Elige una mesa</option>
+        <option value="" disabled>Elige tu mesa</option>
         {Array.from({ length: totalTables }, (_, index) => (
           <option key={index} value={index + 1}>Mesa {index + 1}</option>
         ))}

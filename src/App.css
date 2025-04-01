@@ -2,15 +2,15 @@
 body{
     background-image: url(/public/cafeart.png);
     background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+      background-repeat: no-repeat;
+      margin: 0;
+      height: 100vh;
+
+
     font-family: 'Arial', sans-serif;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-attachment: scroll;
-    background-position: top center;
     height: 100vh;
 }
 .container {
@@ -20,20 +20,31 @@ body{
 }
 
 .card {
+    position: relative; /* Necesario para que los elementos hijos con posición absoluta se ubiquen dentro de este contenedor */
     min-height: 230px;
     height: auto;
-    border-radius: 20px; /* Reducido para un diseño más moderno */
-    background: linear-gradient(145deg, #eab260, #dd7116); /* Gradiente para un efecto más atractivo */
+    border-radius: 20px;
+    background: linear-gradient(145deg, #eab260, #dd7116);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), 
-                -10px -10px 20px rgba(255, 255, 255, 0.7); /* Sombras más suaves */
-    padding: 1.5rem; /* Añadido padding interno para espaciado */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves para interactividad */
+                -10px -10px 20px rgba(255, 255, 255, 0.7);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
     transform: scale(1.02); /* Efecto de agrandamiento al pasar el cursor */
     box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2), 
                 -15px -15px 30px rgba(255, 255, 255, 0.8); /* Sombras más pronunciadas al pasar el cursor */
+}
+
+.logo {
+    position: absolute; /* Posiciona el logo de forma absoluta dentro del contenedor */
+    top: 10px; /* Ajusta la distancia desde la parte superior */
+    left: 10px; /* Ajusta la distancia desde la parte izquierda */
+    max-width: 50px; /* Ajusta el tamaño del logo */
+    height: auto;
+    margin: 0; /* Elimina márgenes */
+    z-index: 10; /* Asegura que el logo esté por encima de otros elementos */
 }
 
 h1{
@@ -45,8 +56,9 @@ h1{
     padding: 1em;
     margin-top: auto;
 }
-
+/* Estilo responsive */
 @media (max-width: 768px) {
+
     .card {
         width: 90%;
         height: auto;
@@ -81,5 +93,22 @@ h1{
     h1 {
         font-size: 1.2rem;
         padding: 0.3em;
+    }
+}
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .logo {
+        max-width: 40px; /* Reduce el tamaño del logo */
+        top: 5px; /* Ajusta la distancia desde la parte superior */
+        left: 5px; /* Ajusta la distancia desde la parte izquierda */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        max-width: 30px; /* Reduce aún más el tamaño del logo */
+        top: 5px; /* Ajusta la distancia desde la parte superior */
+        left: 5px; /* Ajusta la distancia desde la parte izquierda */
     }
 }
