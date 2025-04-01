@@ -19,6 +19,14 @@ const App = () => {
         <TableSelector totalTables={10} onSelectTable={setSelectedTable} />
         {selectedTable && <OrderAlert selectedTable={selectedTable} />}
       </div>
+      {/* Footer con enlaces a redes sociales */}
+      <footer className="footer">
+      <p>&copy; 2025 Cafe 1543. Todos los derechos reservados.</p>        
+      <div class="social-links">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/1543cafebarstq/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        </div>
+      </footer>
     </div>
   );
 };

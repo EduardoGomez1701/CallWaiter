@@ -56,6 +56,24 @@ h1{
     padding: 1em;
     margin-top: auto;
 }
+
+.footer {
+    text-align: center;
+    background-color: transparent;
+
+    color: #fff;
+}
+
+.footer .social-links a {
+    color: #fff;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.footer .social-links a:hover {
+    text-decoration: underline;
+}
+
 /* Estilo responsive */
 @media (max-width: 768px) {
 
