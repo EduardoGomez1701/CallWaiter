@@ -27,7 +27,7 @@ body {
 
 .card {
     position: relative;
-    min-height: 200px; /* Reduce la altura mínima */
+    min-height: 280px; /* Reduce la altura mínima */
     height: auto;
     border-radius: 20px;
     background: linear-gradient(145deg, #eab260, #dd7116);
@@ -74,49 +74,41 @@ h1 {
 
 .footer {
     text-align: center;
-    background-color: #333;
-    color: #fff;
-    padding: 1rem; /* Reduce el padding interno */
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    padding: 0.5rem 1rem; /* Reduce el padding interno */
     border-radius: 5px; /* Bordes más sutiles */
-    margin-top: 1rem; /* Reduce el margen superior */
+    margin-top: 2rem; /* Espaciado superior */
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    width: 100%; /* Asegura que ocupe todo el ancho */
 }
 
 .footer p {
-    margin: 0.5rem 0;
-    font-size: 1rem;
+    margin: 0.5rem 0; /* Espaciado entre párrafos */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    line-height: 1.4; /* Altura de línea */
+}
 
-    line-height: 1.5;
-    color: #fff;
+.social-links {
+    margin-top: 0.5rem; /* Espaciado superior */
+    display: flex; /* Flexbox para alinear los enlaces */
+    justify-content: center; /* Centra los enlaces */
+    gap: 10px; /* Espaciado entre los enlaces */
+    flex-wrap: wrap; /* Permite que los enlaces se ajusten en pantallas pequeñas */
 }
 
 .social-links a {
-    margin-top: 1rem;
-    display: flex;
-    justify-content: center;
-
-    gap: 15px;
-    flex-wrap: wrap;
-
-    color: #fff;
-    margin: 0 10px;
-    text-decoration: none;
+    color: #eab260; /* Color dorado para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+    font-weight: bold; /* Texto en negrita */
+    font-size: 0.9rem; /* Tamaño de fuente más pequeño */
+    transition: color 0.3s ease, transform 0.3s ease; /* Transición suave */
 }
 
-.social-links a{
-    color: #eab260;
-    /* Color dorado para los enlaces */
-    text-decoration: none;
-    /* Sin subrayado */
-    font-weight: bold;
-    /* Texto en negrita */
-    font-size: 1rem;
-    /* Tamaño de fuente */
-    transition: color 0.3s ease, transform 0.3s ease;
-    /* Transición suave */
+.social-links a:hover {
+    color: #dd7116; /* Cambia a un tono más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Efecto de agrandamiento */
 }
-
-
 
 /* Estilo responsive */
 @media (max-width: 768px) {
