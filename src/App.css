@@ -14,7 +14,8 @@ body {
     height: 100vh;
     font-family: 'Arial', sans-serif;
     display: flex;
-    justify-content: center;
+    flex-direction: column; /* Alinea los elementos en columna */
+    justify-content: flex-start; /* Mueve los elementos hacia arriba */
     align-items: center;
 }
 
@@ -26,15 +27,15 @@ body {
 
 .card {
     position: relative;
-    /* Necesario para que los elementos hijos con posición absoluta se ubiquen dentro de este contenedor */
-    min-height: 230px;
+    min-height: 200px; /* Reduce la altura mínima */
     height: auto;
     border-radius: 20px;
     background: linear-gradient(145deg, #eab260, #dd7116);
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
         -10px -10px 20px rgba(255, 255, 255, 0.7);
-    padding: 1.5rem;
+    padding: 1rem; /* Reduce el padding interno */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem; /* Agrega un margen inferior para separar del footer */
 }
 
 .card:hover {
@@ -73,15 +74,12 @@ h1 {
 
 .footer {
     text-align: center;
-
     background-color: #333;
     color: #fff;
-    padding: 1.5rem;
-
-    border-radius: 10px;
-    margin-top: 1rem;
-
-    box-shadow: 0px 0px 0px 0.8px rgba(255, 255, 255, 0.8);
+    padding: 1rem; /* Reduce el padding interno */
+    border-radius: 5px; /* Bordes más sutiles */
+    margin-top: 1rem; /* Reduce el margen superior */
+    box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
 }
 
 .footer p {
