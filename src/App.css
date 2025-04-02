@@ -11,7 +11,6 @@ body {
     background-attachment: fixed;
     /* Fija el fondo para un efecto de desplazamiento suave */
     margin: 0;
-    margin-top: 5px;
     height: 100vh;
     font-family: 'Arial', sans-serif;
     display: flex;
@@ -119,10 +118,7 @@ h1 {
     /* Transición suave */
 }
 
-.social-links a:hover {
-    color: #dd7116; /* Cambia a un tono más oscuro al pasar el cursor */
-    transform: scale(1.1); /* Efecto de agrandamiento */
-}
+
 
 /* Estilo responsive */
 @media (max-width: 768px) {
@@ -141,26 +137,27 @@ h1 {
 
 @media (max-width: 480px) {
     .card {
-        width: 100%;
+        width: 90%;
         height: auto;
-        padding: 15px;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 1.2rem;
-        padding: 0.3em;
+        font-size: 1.5rem;
+        padding: 0.5em;
     }
 }
 
 @media (max-width: 600px) {
     .card {
-        width: 95%;
-        padding: 1rem;
+        width: 90%;
+        height: auto;
+        padding: 20px;
     }
 
     h1 {
-        font-size: 1.2rem;
-        padding: 0.3em;
+        font-size: 1.5rem;
+        padding: 0.5em;
     }
 }
 
