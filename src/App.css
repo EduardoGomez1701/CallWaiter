@@ -1,18 +1,24 @@
 /* App.css */
-body{
-    background-image: url(/public/cafeart.png);
+body {
+    background-image: url(/public/1543beta.jpg);
+    /* Ruta de la imagen */
     background-size: cover;
-      background-repeat: no-repeat;
-      margin: 0;
-      height: 100vh;
-
-
+    /* Asegura que el fondo cubra toda la pantalla */
+    background-repeat: no-repeat;
+    /* Evita que el fondo se repita */
+    background-position: center center;
+    /* Centra el fondo horizontal y verticalmente */
+    background-attachment: fixed;
+    /* Fija el fondo para un efecto de desplazamiento suave */
+    margin: 0;
+    margin-top: 5px;
+    height: 100vh;
     font-family: 'Arial', sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -20,34 +26,43 @@ body{
 }
 
 .card {
-    position: relative; /* Necesario para que los elementos hijos con posición absoluta se ubiquen dentro de este contenedor */
+    position: relative;
+    /* Necesario para que los elementos hijos con posición absoluta se ubiquen dentro de este contenedor */
     min-height: 230px;
     height: auto;
     border-radius: 20px;
     background: linear-gradient(145deg, #eab260, #dd7116);
-    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1), 
-                -10px -10px 20px rgba(255, 255, 255, 0.7);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1),
+        -10px -10px 20px rgba(255, 255, 255, 0.7);
     padding: 1.5rem;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card:hover {
-    transform: scale(1.02); /* Efecto de agrandamiento al pasar el cursor */
-    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2), 
-                -15px -15px 30px rgba(255, 255, 255, 0.8); /* Sombras más pronunciadas al pasar el cursor */
+    transform: scale(1.02);
+    /* Efecto de agrandamiento al pasar el cursor */
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.2),
+        -15px -15px 30px rgba(255, 255, 255, 0.8);
+    /* Sombras más pronunciadas al pasar el cursor */
 }
 
 .logo {
-    position: absolute; /* Posiciona el logo de forma absoluta dentro del contenedor */
-    top: 10px; /* Ajusta la distancia desde la parte superior */
-    left: 10px; /* Ajusta la distancia desde la parte izquierda */
-    max-width: 50px; /* Ajusta el tamaño del logo */
+    position: absolute;
+    /* Posiciona el logo de forma absoluta dentro del contenedor */
+    top: 10px;
+    /* Ajusta la distancia desde la parte superior */
+    left: 10px;
+    /* Ajusta la distancia desde la parte izquierda */
+    max-width: 50px;
+    /* Ajusta el tamaño del logo */
     height: auto;
-    margin: 0; /* Elimina márgenes */
-    z-index: 10; /* Asegura que el logo esté por encima de otros elementos */
+    margin: 0;
+    /* Elimina márgenes */
+    z-index: 10;
+    /* Asegura que el logo esté por encima de otros elementos */
 }
 
-h1{
+h1 {
     font-size: 2rem;
     color: #333;
     text-align: center;
@@ -59,19 +74,54 @@ h1{
 
 .footer {
     text-align: center;
-    background-color: transparent;
 
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem;
+
+    border-radius: 10px;
+    margin-top: 1rem;
+
+    box-shadow: 0px 0px 0px 0.8px rgba(255, 255, 255, 0.8);
+}
+
+.footer p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+
+    line-height: 1.5;
     color: #fff;
 }
 
-.footer .social-links a {
+.social-links a {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+
+    gap: 15px;
+    flex-wrap: wrap;
+
     color: #fff;
     margin: 0 10px;
     text-decoration: none;
 }
 
-.footer .social-links a:hover {
-    text-decoration: underline;
+.social-links a{
+    color: #eab260;
+    /* Color dorado para los enlaces */
+    text-decoration: none;
+    /* Sin subrayado */
+    font-weight: bold;
+    /* Texto en negrita */
+    font-size: 1rem;
+    /* Tamaño de fuente */
+    transition: color 0.3s ease, transform 0.3s ease;
+    /* Transición suave */
+}
+
+.social-links a:hover {
+    color: #dd7116; /* Cambia a un tono más oscuro al pasar el cursor */
+    transform: scale(1.1); /* Efecto de agrandamiento */
 }
 
 /* Estilo responsive */
@@ -117,16 +167,22 @@ h1{
 /* Media query para pantallas más pequeñas */
 @media (max-width: 768px) {
     .logo {
-        max-width: 40px; /* Reduce el tamaño del logo */
-        top: 5px; /* Ajusta la distancia desde la parte superior */
-        left: 5px; /* Ajusta la distancia desde la parte izquierda */
+        max-width: 40px;
+        /* Reduce el tamaño del logo */
+        top: 5px;
+        /* Ajusta la distancia desde la parte superior */
+        left: 5px;
+        /* Ajusta la distancia desde la parte izquierda */
     }
 }
 
 @media (max-width: 480px) {
     .logo {
-        max-width: 30px; /* Reduce aún más el tamaño del logo */
-        top: 5px; /* Ajusta la distancia desde la parte superior */
-        left: 5px; /* Ajusta la distancia desde la parte izquierda */
+        max-width: 30px;
+        /* Reduce aún más el tamaño del logo */
+        top: 5px;
+        /* Ajusta la distancia desde la parte superior */
+        left: 5px;
+        /* Ajusta la distancia desde la parte izquierda */
     }
 }
