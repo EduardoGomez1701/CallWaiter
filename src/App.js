@@ -9,15 +9,15 @@ const App = () => {
   return (
     <div className='container'>
       <div className='card'>
+        <h1>Bienvenido al Restaurante</h1>
+        {/* Componente para seleccionar la mesa */}
+        <TableSelector totalTables={10} onSelectTable={setSelectedTable} />
         {/* Agregar el logo aquí */}
         <img
           src="/logo.png"
           alt="Logo"
           className="logo"
         />
-        <h1>Bienvenido al Restaurante</h1>
-        {/* Componente para seleccionar la mesa */}
-        <TableSelector totalTables={10} onSelectTable={setSelectedTable} />
         {/* Mostrar alerta de pedido si hay una mesa seleccionada */}
         {selectedTable && <OrderAlert selectedTable={selectedTable} />}
       </div>
@@ -27,10 +27,10 @@ const App = () => {
         <div className="social-links">
           <p><b>Escribenos y haz tu pedido a domicilio</b></p>
           {/* Enlace a WhatsApp */}
-          <a href="https://wa.me/+573008079009" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+          <a href="https://wa.me/+573008079009" target="_blank" rel="noopener noreferrer"> Contectanos en WhatsApp</a>
           <p><b>Visita nuestro perfil de Instagram</b></p>
           {/* Enlace a Instagram */}
-          <a href="https://www.instagram.com/1543cafebarstq/" target="_blank" rel="noopener noreferrer">Instagram</a> <br></br>
+          <a href="https://www.instagram.com/1543cafebarstq/" target="_blank" rel="noopener noreferrer">Ver Instagram</a> <br></br>
           {/* Enlace a WhatsApp <p>Aqui podras ver nuestro Menu</p>
           <a href="https://Menu/" target="_blank" rel="noopener noreferrer">Menu1543</a> */}
         </div>

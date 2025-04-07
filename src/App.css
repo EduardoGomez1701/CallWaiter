@@ -48,11 +48,11 @@ body {
 .logo {
     position: absolute;
     /* Posiciona el logo de forma absoluta dentro del contenedor */
-    top: 10px;
+    top: 5px;
     /* Ajusta la distancia desde la parte superior */
     left: 10px;
     /* Ajusta la distancia desde la parte izquierda */
-    max-width: 50px;
+    max-width: 60px;
     /* Ajusta el tamaño del logo */
     height: auto;
     margin: 0;
