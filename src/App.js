@@ -25,14 +25,17 @@ const App = () => {
       <footer className="footer">
         <p><b><i>&copy; 2025 <br></br>1543 Cafe. Todos los derechos reservados.</i></b></p>
         <div className="social-links">
-          <p><b>Escribenos y haz tu pedido a domicilio</b></p>
           {/* Enlace a WhatsApp */}
-          <a href="https://wa.me/+573008079009" target="_blank" rel="noopener noreferrer"> Contectanos en WhatsApp</a>
-          <p><b>Visita nuestro perfil de Instagram</b></p>
+          <p><b>GUARDA NUESTRO NUMERO DE WHATSAPP Y HAZ TU PEDIDO A DOMICILIO</b></p>
+          <a href="https://wa.me/+573008079009" target="_blank" rel="noopener noreferrer"> Escríbenos a WhatsApp</a>
+
           {/* Enlace a Instagram */}
-          <a href="https://www.instagram.com/1543cafebarstq/" target="_blank" rel="noopener noreferrer">Ver Instagram</a> <br></br>
-          {/* Enlace a WhatsApp <p>Aqui podras ver nuestro Menu</p>
-          <a href="https://Menu/" target="_blank" rel="noopener noreferrer">Menu1543</a> */}
+          <p><b>VISITA NUESTRO PERFIL DE INSTAGRAM</b></p>
+          <a href="https://www.instagram.com/1543cafebarstq/" target="_blank" rel="noopener noreferrer">Ver Instagram</a>
+
+          {/* Enlace a Instagram */}
+          <p>AQUI PODRAS VER NUESTRO MENÚ</p>
+          <a href="https://drive.google.com/file/d/1l9i-ynqt5gaWwfC3qqflVDVAhb8vq-7R/view?usp=drive_link" target="_blank" rel="noopener noreferrer">Ver Menú</a> <br></br>
         </div>
       </footer>
     </div>
